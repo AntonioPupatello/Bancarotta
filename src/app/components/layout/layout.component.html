@@ -1,1 +1,12 @@
-<p>layout works!</p>
+<header>
+    <ng-content select="[layout-header]"></ng-content>
+    <nav>
+        <ng-content select="[layout-nav]"></ng-content>
+    </nav>
+</header>
+<main>
+    <ng-content></ng-content>
+</main>
+<footer>
+    &copy;{{currentYear}}<ng-content select="[layout-footer]"></ng-content>
+</footer>
