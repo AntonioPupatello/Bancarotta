@@ -1,5 +1,10 @@
 <app-layout>
   <ng-container layout-header> Banca-rotta </ng-container>
-  <router-outlet />
+  <ng-container layout-nav>
+    <button mat-button [routerLink]="'/login'">Accedi</button>
+    <button mat-button [routerLink]="'/signin'">Registrati</button>
+    <a [routerLink]="'/login'">Accedi</a>
+    <a [routerLink]="'/signin'">Registrati</a>
+  </ng-container>
   <ng-container layout-footer> footer </ng-container>
 </app-layout>
