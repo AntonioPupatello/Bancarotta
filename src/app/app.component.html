@@ -1,6 +1,8 @@
 <app-layout>
   <ng-container layout-header> Banca-rotta </ng-container>
-  <app-buttons></app-buttons>
+ <app-buttons></app-buttons>
+ <app-login *ngIf="isLoginVisible"></app-login>
+ <app-signin *ngIf="isSigninVisible"></app-signin>
   <router-outlet />
   <ng-container layout-footer> footer </ng-container>
 </app-layout>

@@ -5,7 +5,12 @@
     </nav>
 </header>
 <main>
-   <app-buttons></app-buttons>
+   <div>
+    <app-buttons></app-buttons>
+   </div>
+   <router-outlet></router-outlet>
+   <app-login *ngIf="isLoginVisible"></app-login>
+   <app-signin *ngIf="isSigninVisible"></app-signin>
 </main>
 <footer>
     &copy;{{currentYear}}<ng-content select="[layout-footer]"></ng-content>

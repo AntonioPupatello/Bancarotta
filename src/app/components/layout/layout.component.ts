@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ButtonsComponent } from '../buttons/buttons.component';
+import { CommonModule, NgIf } from '@angular/common';
+import { LoginComponent } from '../../pages/login/login.component';
+import { SigninComponent } from '../../pages/signin/signin.component';
 
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterModule,ButtonsComponent],
+  imports: [RouterModule,ButtonsComponent,CommonModule,NgIf,LoginComponent,SigninComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
@@ -16,5 +19,16 @@ export class LayoutComponent {
   get currentYear():number{
     return this.date
   }
+  isLoginVisible: boolean = false;
+  isSigninVisible: boolean = false;
 
+  showLogin() {
+    this.isLoginVisible = true;
+    this.isSigninVisible = false;
+  }
+
+  showSignin() {
+    this.isLoginVisible = false;
+    this.isSigninVisible = true;
+  }
 }
