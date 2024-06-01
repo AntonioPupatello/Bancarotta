@@ -19,16 +19,5 @@ export class LayoutComponent {
   get currentYear():number{
     return this.date
   }
-  isLoginVisible: boolean = false;
-  isSigninVisible: boolean = false;
 
-  showLogin() {
-    this.isLoginVisible = true;
-    this.isSigninVisible = false;
-  }
-
-  showSignin() {
-    this.isLoginVisible = false;
-    this.isSigninVisible = true;
-  }
 }

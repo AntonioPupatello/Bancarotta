@@ -11,5 +11,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  private date:number = new Date().getFullYear()
+  get currentYear():number{
+    return this.date
+  }
 }
