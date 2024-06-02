@@ -22,7 +22,7 @@ $base-spacing: 1rem;
 
 header{
     grid-area: header;
-    background: grey;
+    background: lightgray;
     @include flex-element;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@ main{
 footer{
     @include flex-element;
     grid-area:footer;
-    background: grey
+    background: lightgrey
 }
 
 .accesso  {
