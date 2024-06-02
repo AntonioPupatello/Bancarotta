@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
+import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
-import { ButtonsComponent } from '../buttons/buttons.component';
-import { CommonModule, NgIf } from '@angular/common';
-import { LoginComponent } from '../../pages/login/login.component';
-import { SigninComponent } from '../../pages/signin/signin.component';
+
 
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterModule,ButtonsComponent,CommonModule,NgIf,LoginComponent,SigninComponent],
+  imports: [RouterModule, MatToolbar, MatToolbarModule],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
