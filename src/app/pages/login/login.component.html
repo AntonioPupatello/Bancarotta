@@ -1,1 +1,13 @@
-<p>login works!</p>
+<app-layout>
+    <form #homeform="ngForm" (ngSubmit)="onSubmit(homeform)" class="login">
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" name="email" ngModel required />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" ngModel required />
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!homeform.valid">Accedi</button>
+    </form>
+</app-layout>
