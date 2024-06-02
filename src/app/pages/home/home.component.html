@@ -1,4 +1,39 @@
-<ng-container layout-nav>
-    <a [routerLink]="'/login'">Accedi</a>
-    <a [routerLink]="'/signin'">Registrati</a>
+<!--
+<mat-toolbar layout-header color="primary">
+    <span>
+        <a routerLink="/" style="text-decoration: none">Banca-rotta</a>       
+    </span>
+    <span class="accesso"></span>
+    <button mat-button [routerLink]="'/login'">Accedi</button>
+    <button mat-button [routerLink]="'/signin'">Registrati</button>
+</mat-toolbar>
+<div class="welcome">
+    <h1>Benvenuto nella banca</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil id, a culpa sunt blanditiis odit unde ut nesciunt aliquam aspernatur delectus autem. Quae, ducimus.</p>
+</div>
+<ng-container layout-footer> footer </ng-container>
+-->
+
+<app-layout>
+  <ng-container layout-nav>
+    <button mat-button [routerLink]="'/login'">Accedi</button>
+    <button mat-button [routerLink]="'/signin'">Registrati</button>
   </ng-container>
+  <ng-container>
+      <div class="welcome">
+          <h1>Benvenuto nella nostra banca</h1>
+          <p>
+              Benvenuto su Banca-Rotta, la tua soluzione per tutte le esigenze finanziarie, con un tocco di ironia! Offriamo una gamma completa di servizi bancari, dai conti correnti ai prestiti personali, dalle carte di credito ai mutui ipotecari. Nonostante il nostro nome possa sembrare uno scherzo, ci impegniamo a offrirti il meglio e la giusta rotta alle tue operazioni finanziarie!
+              Esplora il nostro sito per scoprire i nostri prodotti e servizi, le ultime novità e come possiamo aiutarti a gestire le tue finanze, anche nei momenti più incerti del mercato. Unisciti a noi in questo viaggio verso un futuro finanziario più stabile, con un pizzico di humor!
+          </p>
+      </div>
+
+      <tab-group></tab-group>
+      
+
+      <div>
+          <img src="/src/assets/images/image1.webp" alt="Logo" class="image1">
+      </div>
+  </ng-container>
+  <ng-container layout-footer> footer </ng-container>
+</app-layout>
