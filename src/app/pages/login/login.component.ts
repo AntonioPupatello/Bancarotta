@@ -10,7 +10,7 @@ import { AuthService } from '../../auth/auth.service';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterModule, FormsModule, MatInputModule, MatFormFieldModule, MatButtonModule, LayoutComponent],
+  imports: [RouterModule, FormsModule, MatInputModule, MatFormFieldModule, MatButtonModule,  LayoutComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
