@@ -1,6 +1,7 @@
 .welcome {
     text-align: center;
     margin-top: 50px;
+    max-width: 100%,
   
     h1 {
       font-size: 3em;
@@ -13,6 +14,13 @@
 }
 
 .image1 {
-  width: 1000px;
-  height: 1000px;
+  width: auto;
+  height: auto;
+  align-items: left;
+}
+
+.image2 {
+ width: auto;
+  height: auto;
+  align-items: right;
 }

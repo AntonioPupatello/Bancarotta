@@ -13,3 +13,5 @@ import { ContactComponent } from '../../pages/contact/contact.component';
   imports: [MatTabsModule, ContactComponent ],
 })
 export class TabGroupBasicExample {}
+
+//Qui sarebbe da mettere export class TabsComponent

@@ -33,3 +33,5 @@ export class StepperEditableExample {
 
   constructor(private _formBuilder: FormBuilder) {}
 }
+
+//Qui sarebbe da mettere export class StepperComponent
