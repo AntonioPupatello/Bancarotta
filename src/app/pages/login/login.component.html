@@ -8,6 +8,6 @@
             <mat-label>Password</mat-label>
             <input matInput type="password" name="password" ngModel required />
         </mat-form-field>
-        <button mat-raised-button color="primary" type="submit" [disabled]="!homeform.valid">Accedi</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!homeform.valid" [routerLink]="'/initialpage'">Accedi</button>
     </form>
 </app-layout>

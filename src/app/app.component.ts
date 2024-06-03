@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AuthService } from './auth/auth.service';
+
+
 
 
 
@@ -10,20 +12,12 @@ import { AuthService } from './auth/auth.service';
 
   imports: [RouterOutlet, RouterModule,],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  providers:[AuthService]
 })
 
 
 export class AppComponent {
   title = 'bank-project';
   constructor(private authService: AuthService){}
-
- if (localStorage.getItem('user')) {
-  const user = JSON.parse(localStorage.getItem('user'))
-  this.authService.createUser(user.email, user.id, user._token)
- }
-
- onLogout(){
-  this.authService.Logout()
- }
 }
