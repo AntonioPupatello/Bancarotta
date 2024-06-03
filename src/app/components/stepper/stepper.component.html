@@ -17,7 +17,7 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Data di nascita</mat-label>
-          <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+          <input matInput type="date" formControlName="firstCtrl" placeholder="Last name, First name" required>
         </mat-form-field>
         <div>
           <button mat-button matStepperNext>Avanti</button>
@@ -34,7 +34,7 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Password</mat-label>
-          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+          <input matInput type="password" formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
                  required>
         </mat-form-field>
         <div>
@@ -49,6 +49,7 @@
       <div>
         <button mat-button matStepperPrevious>Indietro</button>
         <button mat-button (click)="stepper.reset()">Reset</button>
+        <button mat-button type="submit">Conferma i dati inseriti</button>
       </div>
     </mat-step>
   </mat-stepper>

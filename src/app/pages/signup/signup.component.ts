@@ -11,10 +11,10 @@ import { StepperEditableExample } from '../../components/stepper/stepper.compone
   selector: 'app-signin',
   standalone: true,
   imports: [RouterModule, FormsModule, MatInputModule, MatFormFieldModule, MatButtonModule, FormsModule, LayoutComponent,StepperEditableExample ],
-  templateUrl: './signin.component.html',
-  styleUrl: './signin.component.scss'
+  templateUrl: './signup.component.html',
+  styleUrl: './signup.component.scss'
 })
-export class SigninComponent {
+export class SignupComponent {
   onSubmit(form: NgForm) {
     const email = form.value.email
     const password = form.value.password}
