@@ -13,8 +13,9 @@ export class CarouselComponent {
   slides = [
     { image: '../../../assets/images/image1.webp', description: 'Descrizione per immagine 1' },
     { image: '../../../assets/images/image2.webp', description: 'Descrizione per immagine 2' },
-    { image: '../../../assets/images/image4.webp', description: 'Descrizione per immagine 3' },
-    { image: '../../../assets/images/image5.webp', description: 'Descrizione per immagine 5' },
+    { image: '../../../assets/images/image6.webp', description: 'Descrizione per immagine 5' },
+    { image: '../../../assets/images/image7.webp', description: 'Descrizione per immagine 5' },
+    { image: '../../../assets/images/image8.webp', description: 'Descrizione per immagine 5' },
   ];
 
   showSlide(index: number) {
