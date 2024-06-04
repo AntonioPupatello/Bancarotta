@@ -1,14 +1,11 @@
 import {Component} from '@angular/core';
 import {MatGridListModule} from '@angular/material/grid-list';
 
-/**
- * @title Basic grid-list
- */
 @Component({
-  selector: 'app-grid',
-  styleUrl: './grid.component.scss',
-  templateUrl: './grid.component.html',
+  selector: 'app-grid-3',
+  styleUrl: './grid-3.component.scss',
+  templateUrl: './grid-3.component.html',
   standalone: true,
   imports: [MatGridListModule],
 })
-export class GridListOverview {}
+export class Grid3Component {}
