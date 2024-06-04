@@ -5,7 +5,7 @@
 }
 
 .form-container {
-  width: 100%; /* Assicura che il form-container sia largo quanto l'immagine */
+  width: 2000px; /* Assicura che il form-container sia largo quanto l'immagine */
   max-width: 400px; /* Imposta una larghezza massima per il form-container */
   display: flex;
   flex-direction: column;
@@ -14,4 +14,8 @@
 
 img {
   max-width: 100%;
+}
+
+.form {
+  width: 300px;
 }

@@ -39,12 +39,6 @@ main{
     padding: $base-spacing;
 }
 
-footer{
-    @include flex-element;
-    grid-area:footer;
-    background: lightgrey;
-}
-
 .accesso  {
     flex:1 1 auto;
   }

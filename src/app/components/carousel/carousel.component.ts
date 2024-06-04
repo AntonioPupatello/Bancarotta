@@ -11,11 +11,11 @@ import { CommonModule } from '@angular/common';
 export class CarouselComponent {
   currentSlide = 0;
   slides = [
-    { image: '../../../assets/images/image1.webp', description: 'Descrizione per immagine 1' },
-    { image: '../../../assets/images/image2.webp', description: 'Descrizione per immagine 2' },
-    { image: '../../../assets/images/image6.webp', description: 'Descrizione per immagine 5' },
-    { image: '../../../assets/images/image7.webp', description: 'Descrizione per immagine 5' },
-    { image: '../../../assets/images/image8.webp', description: 'Descrizione per immagine 5' },
+    { image: '../../../assets/images/image1.webp', description: 'Inizia a risparmiare con noi' },
+    { image: '../../../assets/images/image2.webp', description: 'Investi il tuo denaro' },
+    { image: '../../../assets/images/image6.webp', description: 'Paga con la tua carta personalizzata' },
+    { image: '../../../assets/images/image7.webp', description: 'Siamo presenti in tutta Europa' },
+    { image: '../../../assets/images/image8.webp', description: 'Valute nazionali e internazionali' },
   ];
 
   showSlide(index: number) {
