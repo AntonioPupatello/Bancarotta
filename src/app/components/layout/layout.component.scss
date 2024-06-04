@@ -42,7 +42,7 @@ main{
 footer{
     @include flex-element;
     grid-area:footer;
-    background: lightgrey
+    background: lightgrey;
 }
 
 .accesso  {
