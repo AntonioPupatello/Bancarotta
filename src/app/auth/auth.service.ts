@@ -8,7 +8,7 @@ import { User } from '../models/user.model';
 export class AuthService {
 LoginUrl = ''
 SignUpUrl = ''
-  user: User| undefined;
+  user: any = User;
   constructor(private http:HttpClient) { }
 
   createUser(email: string, id: string, token: string){
@@ -23,7 +23,7 @@ SignUpUrl = ''
   }
 
   Logout(){
-    
+    this.user = null
     localStorage.removeItem('user')
   }
 }

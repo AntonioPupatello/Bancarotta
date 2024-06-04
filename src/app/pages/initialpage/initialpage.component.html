@@ -1,8 +1,28 @@
-<app-layout> </app-layout>
-    <mat-sidenav-container class="example-container">
-        <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
-                     [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
-                     [fixedBottomGap]="options.value.bottom">
-         
-        </mat-sidenav> 
-  
+<nav>
+    <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+            (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Banca-Rotta</span>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
+</nav>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="options.value.fixed"
+        [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+        <div class="button-column">
+            <button mat-button [routerLink]="">Bonifici</button>
+            <button mat-button [routerLink]="">Prelievi</button>
+            <button mat-button [routerLink]="">Assicurazioni</button>
+            <button mat-button [routerLink]="">Depositi</button>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-card class="example-card">
+            <mat-card-content>
+                <h1>Il tuo saldo è: {{balance}}&euro;</h1>
+            </mat-card-content>
+        </mat-card>
+    </mat-sidenav-content>
+</mat-sidenav-container>

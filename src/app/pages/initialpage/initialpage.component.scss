@@ -1,15 +1,47 @@
 .example-container {
-    position: absolute;
-    top: 60px;
-    bottom: 60px;
-    left: 0;
-    right: 0;
-  }
-  
-  .example-sidenav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10%;
-    background: rgba(255, 0, 0, 0.5);
-  }
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+.example-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.example-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
