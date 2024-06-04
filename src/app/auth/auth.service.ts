@@ -16,7 +16,7 @@ SignUpUrl = ''
   }
 
   Login(email: string, password: string){
-    return this.http.post(`${this.LoginUrl}?auth=${this.user?.token}`,{email: email, password: password, returnSecureToken: true})
+    return this.http.post(this.LoginUrl,{email: email, password: password, returnSecureToken: true})
   }
   SignUp(nome: string, cognome: string, datadinascita: Date, email: string, password: string){
     return this.http.post(this.SignUpUrl, {email: email, password: password, returnSecureToken: true})
