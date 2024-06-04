@@ -9,15 +9,15 @@
         <ng-template matStepLabel>I tuoi dati personali</ng-template>
         <mat-form-field>
           <mat-label>Nome</mat-label>
-          <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+          <input matInput formControlName="nome" placeholder="Last name, First name" required>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Cognome</mat-label>
-          <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+          <input matInput formControlName="cognome" placeholder="Last name, First name" required>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Data di nascita</mat-label>
-          <input matInput type="date" formControlName="firstCtrl" placeholder="Last name, First name" required>
+          <input matInput type="date" formControlName="datadinascita" placeholder="Last name, First name" required>
         </mat-form-field>
         <div>
           <button mat-button matStepperNext>Avanti</button>
@@ -29,12 +29,12 @@
         <ng-template matStepLabel>Email & password</ng-template>
         <mat-form-field>
           <mat-label>Email</mat-label>
-          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+          <input matInput type="email" formControlName="email" placeholder="Ex. 1 Main St, New York, NY"
                  required>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+          <input matInput type="password" formControlName="password" placeholder="Ex. 1 Main St, New York, NY"
                  required>
         </mat-form-field>
         <div>
@@ -49,7 +49,7 @@
       <div>
         <button mat-button matStepperPrevious>Indietro</button>
         <button mat-button (click)="stepper.reset()">Reset</button>
-        <button mat-button type="submit">Conferma i dati inseriti</button>
+        <button mat-button type="submit" (click)="onSubmit()">Conferma i dati inseriti</button>
       </div>
     </mat-step>
   </mat-stepper>

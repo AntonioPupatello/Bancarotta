@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { LayoutComponent } from '../../components/layout/layout.component';
 import { StepperEditableExample } from '../../components/stepper/stepper.component';
 
+
 @Component({
   selector: 'app-signin',
   standalone: true,
@@ -15,7 +16,5 @@ import { StepperEditableExample } from '../../components/stepper/stepper.compone
   styleUrl: './signup.component.scss'
 })
 export class SignupComponent {
-  onSubmit(form: NgForm) {
-    const email = form.value.email
-    const password = form.value.password}
+
 }

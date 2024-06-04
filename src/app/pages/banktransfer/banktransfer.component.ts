@@ -14,8 +14,8 @@ import { BanktransferService } from '../../services/banktransfer.service';
   styleUrl: './banktransfer.component.scss'
 })
 export class BanktransferComponent {
-onSubmit(_t7: NgForm) {
-throw new Error('Method not implemented.');
+onSubmit(form: NgForm) {
+
 }
 constructor(private bankTransfer:BanktransferService){}
 
