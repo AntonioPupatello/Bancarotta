@@ -1,14 +1,15 @@
-<header>
-    <ng-content select="[layout-header]">
-        <a routerLink="/" style="text-decoration: none">Banca-rotta</a>
-    </ng-content>
-    <nav>
-        <ng-content select="[layout-nav]" class="accesso"></ng-content>
-    </nav>
+
+<header class="sticky">
+  <ng-content select="[layout-header]">
+    <a routerLink="/" style="text-decoration: none">Banca-rotta</a>
+  </ng-content>
+  <nav>
+    <ng-content select="[layout-nav]" class="accesso"></ng-content>
+  </nav>
 </header>
 <main>
-    <ng-content></ng-content>
+  <ng-content></ng-content>
 </main>
 <footer>
-    &copy;{{currentYear}}<ng-content select="[layout-footer]"></ng-content>
+  &copy;{{ currentYear }}<ng-content select="[layout-footer]"></ng-content>
 </footer>

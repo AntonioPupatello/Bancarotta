@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ContactComponent } from '../../pages/contact/contact.component';
+import { Carousel01Component } from '../carousel/carousel.component';
 
 /**
  * @title Basic use of the tab group
@@ -10,7 +11,7 @@ import { ContactComponent } from '../../pages/contact/contact.component';
   templateUrl: 'tabs.component.html',
   styleUrl: 'tabs.component.scss',
   standalone: true,
-  imports: [MatTabsModule, ContactComponent ],
+  imports: [MatTabsModule, ContactComponent, Carousel01Component ],
 })
 export class TabGroupBasicExample {}
 

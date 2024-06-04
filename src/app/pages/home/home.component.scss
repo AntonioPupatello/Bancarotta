@@ -1,26 +1,28 @@
+
 .welcome {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  margin-top: 50px;
+  max-width: 100%,  h1 {
     text-align: center;
-    margin-top: 50px;
-    max-width: 100%,
-  
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-  
-    p {
-      font-size: 1em;
-    }
+    font-size: 3em;
+    
+  }
+
+  p {
+    text-align: center;
+    font-size: 1em;
+    z-index: 5;
+  }
 }
 
 .image1 {
   width: auto;
   height: auto;
-  align-items: left;
 }
 
 .image2 {
- width: auto;
+  width: auto;
   height: auto;
-  align-items: right;
 }
