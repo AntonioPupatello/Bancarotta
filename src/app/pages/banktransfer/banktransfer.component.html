@@ -1,17 +1,69 @@
-<app-layout>
-    <form #homeform="ngForm" (ngSubmit)="onSubmit(homeform)">
-        <mat-form-field appearance="fill">
-            <mat-label>Nome e Cognome del mittente</mat-label>
-            <input matInput type="text" name="name and surname" ngModel required />
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>Nome e Cognome del destinatario</mat-label>
-            <input matInput type="text" name="destinatario" ngModel required />
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>IBAN</mat-label>
-            <input matInput type="text" name="IBAN" ngModel required />
-        </mat-form-field>
-        <button mat-raised-button color="primary" type="submit" [disabled]="!homeform.valid">Accedi</button>
+<div style="text-align:center">
+    <h1>
+      Effettua un Bonifico Bancario
+    </h1>
+    <form [formGroup]="transferForm" (ngSubmit)="onSubmit()">
+      <div formGroupName="sender">
+        <h3>Mittente</h3>
+        <label>
+          Nome:
+          <input formControlName="name">
+        </label>
+        <label>
+          IBAN:
+          <input formControlName="iban">
+        </label>
+        <label>
+          Banca:
+          <input formControlName="bank">
+        </label>
+      </div>
+      
+      <div formGroupName="recipient">
+        <h3>Destinatario</h3>
+        <label>
+          Nome:
+          <input formControlName="name">
+        </label>
+        <label>
+          IBAN:
+          <input formControlName="iban">
+        </label>
+        <label>
+          Banca:
+          <input formControlName="bank">
+        </label>
+      </div>
+      
+      <div formGroupName="details">
+        <h3>Dettagli della Transazione</h3>
+        <label>
+          Importo:
+          <input formControlName="amount" type="number">
+        </label>
+        <label>
+          Valuta:
+          <input formControlName="currency">
+        </label>
+        <label>
+          Descrizione:
+          <input formControlName="description">
+        </label>
+        <label>
+          Data di Esecuzione:
+          <input formControlName="execution_date" type="date">
+        </label>
+      </div>
+      
+      <div formGroupName="security">
+        <h3>Sicurezza</h3>
+        <label>
+          Token di Autenticazione:
+          <input formControlName="auth_token">
+        </label>
+      </div>
+      
+      <button type="submit" [disabled]="transferForm.invalid">Effettua Trasferimento</button>
     </form>
-</app-layout>
+  </div>
+  
