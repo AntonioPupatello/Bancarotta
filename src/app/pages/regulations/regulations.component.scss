@@ -1,0 +1,44 @@
+:host {
+    h1 {
+        font-size: xx-large;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    p {
+        font-size: smaller;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+
+img {
+    border-radius: 50%; /* Makes the image completely round */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block; /* Ensures the image is a block-level element */
+    // border-top: 60px solid red;
+    // border-right: 60px solid transparent;
+    // border-radius: 200%;
+    // max-width: 100%;
+    // max-height: 100%; /* Maintain aspect ratio */
+    // display: block; /* Ensure images are block level elements */
+    // object-fit: contain; /* Questo assicura che l'immagine sia ridimensionata per adattarsi nel contenitore senza essere tagliata */
+    // object-position: center; /* Questo centra l'immagine nel contenitore */
+    // object-fit: scale-down;
+}
+
+div[grid-left] {
+    text-align: left;
+}
+
+div[grid-center] {
+    text-align:center;
+}
+
+div[grid-right] {
+    text-align: right;
+}

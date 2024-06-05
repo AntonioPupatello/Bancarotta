@@ -14,4 +14,4 @@ import { StoryComponent } from '../story/story.component';
   standalone: true,
   imports: [MatTabsModule, ContactComponent, CarouselComponent, StoryComponent ],
 })
-export class TabGroupBasicExample {}
+export class TabComponent {}
