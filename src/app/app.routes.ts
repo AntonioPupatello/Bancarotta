@@ -11,5 +11,5 @@ export const routes: Routes = [
     { path: 'login',component: LoginComponent },
     { path: '',component: HomeComponent },
     { path:'login/user',component: InitialpageComponent },
-    {path:'transfer',component:BanktransferComponent}
+    {path:'user/transfer',component:BanktransferComponent}
 ]

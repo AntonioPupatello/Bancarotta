@@ -20,7 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class InitialpageComponent {
   options = this._formBuilder.group({
-    bottom: 650,
+    bottom: 536,
     fixed: true,
     top: 61,
   });

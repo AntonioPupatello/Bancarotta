@@ -3,7 +3,7 @@
       Effettua un Bonifico Bancario
     </h1>
     <form [formGroup]="transferForm" (ngSubmit)="onSubmit()">
-      <div formGroupName="sender">
+      <div class="form-group" formGroupName="sender">
         <h3>Mittente</h3>
         <label>
           Nome:
@@ -35,7 +35,7 @@
         </label>
       </div>
       
-      <div formGroupName="details">
+      <div class="form-group" formGroupName="details">
         <h3>Dettagli della Transazione</h3>
         <label>
           Importo:
@@ -55,7 +55,7 @@
         </label>
       </div>
       
-      <div formGroupName="security">
+      <div class="form-group" formGroupName="security">
         <h3>Sicurezza</h3>
         <label>
           Token di Autenticazione:
@@ -63,7 +63,7 @@
         </label>
       </div>
       
-      <button type="submit" [disabled]="transferForm.invalid">Effettua Trasferimento</button>
+      <button mat-button type="submit" [disabled]="transferForm.invalid">Effettua Trasferimento</button>
     </form>
   </div>
   

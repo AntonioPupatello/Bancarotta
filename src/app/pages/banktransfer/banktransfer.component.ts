@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { LayoutComponent } from '../../components/layout/layout.component';
 import { MatInputModule } from '@angular/material/input';
@@ -10,7 +10,7 @@ import { Recipient, Security, Sender, TransactionDetails, Transfer } from '../..
 @Component({
   selector: 'app-banktransfer',
   standalone: true,
-  imports: [RouterModule,FormsModule,LayoutComponent,MatInputModule,MatButtonModule],
+  imports: [RouterModule,FormsModule,LayoutComponent,MatInputModule,MatButtonModule, ReactiveFormsModule],
   templateUrl: './banktransfer.component.html',
   styleUrl: './banktransfer.component.scss'
 })
