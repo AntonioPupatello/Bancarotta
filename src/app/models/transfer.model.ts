@@ -1,23 +1,23 @@
-interface Sender {
+export interface Sender {
     name: string;
     iban: string;
     bank: string;
   }
   
-  interface Recipient {
+  export interface Recipient {
     name: string;
     iban: string;
     bank: string;
   }
   
-  interface TransactionDetails {
+  export interface TransactionDetails {
     amount: number;
     currency: string;
     description: string;
     execution_date: string;
   }
   
-  interface Security {
+  export interface Security {
     auth_token: string;
   }
   
