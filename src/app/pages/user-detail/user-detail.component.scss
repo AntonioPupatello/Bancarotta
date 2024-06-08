@@ -1,0 +1,21 @@
+.user {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 colonna */
+    grid-template-rows: repeat(2, auto); /* 2 righe */
+    gap: 20px; /* Spaziatura tra gli elementi della griglia */
+
+    .flexUp {
+        display: flex;
+        justify-content: space-evenly;
+
+        .flexCol {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 600px;
+            height: 600px;
+        }
+    }
+}

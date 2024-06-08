@@ -6,8 +6,8 @@ import { RegulationsComponent } from './pages/regulations/regulations.component'
 
 
 export const routes: Routes = [
+    { path: '',component: HomeComponent },
     { path: 'signin',component: SigninComponent },
     { path: 'login',component: LoginComponent },
     { path: 'regulations',component: RegulationsComponent },
-    { path: '',component: HomeComponent }
 ]

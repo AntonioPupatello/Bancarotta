@@ -1,10 +1,7 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-story',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './story.component.html',
   styleUrls: ['./story.component.scss']
 })

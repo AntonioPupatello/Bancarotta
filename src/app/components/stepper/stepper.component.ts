@@ -1,28 +1,12 @@
 import {Component} from '@angular/core';
-import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatButtonModule} from '@angular/material/button';
+import {FormBuilder, Validators} from '@angular/forms';
 
-/**
- * @title Stepper with editable steps
- */
 @Component({
-  selector: 'stepper',
+  selector: 'app-stepper',
   templateUrl: 'stepper.component.html',
   styleUrl: 'stepper.component.scss',
-  standalone: true,
-  imports: [
-    MatButtonModule,
-    MatStepperModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-  ],
 })
-export class StepperEditableExample {
+export class StepperComponent {
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
   });

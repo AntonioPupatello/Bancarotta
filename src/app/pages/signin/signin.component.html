@@ -1,10 +1,11 @@
 <app-layout>
-    <app-grid-2>
-        <ng-content grid-left>
-            <stepper></stepper>
-        </ng-content>
-        <ng-content grid-right>
+    <div class="grid-container">
+        <div class="grid-item">
+            <app-stepper></app-stepper>
+        </div>
+        <div class="grid-item">
             <img src="../../../assets/images/image4.webp" alt="Immagine">
-        </ng-content>
-    </app-grid-2>
+        </div>
+    </div>
 </app-layout>
+  

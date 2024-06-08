@@ -1,7 +1,8 @@
 <app-layout>
     <ng-container layout-nav>
-      <button mat-button [routerLink]="'/login'">Accedi</button>
-      <button mat-button [routerLink]="'/signin'">Registrati</button>
+        <button mat-button routerLink="users">I nostri utenti</button>
+        <button mat-button routerLink="login">Accedi</button>
+        <button mat-button routerLink="signin">Registrati</button>
     </ng-container>
     <ng-container>
         <div class="welcome">
@@ -11,7 +12,7 @@
                 Esplora il nostro sito per scoprire i nostri prodotti e servizi, le ultime novità finanziarie e come possiamo aiutarti a gestire le tue finanze, anche nei momenti più "rotti". Unisciti a noi in questo viaggio verso un futuro finanziario più stabile, con un pizzico di humor!
             </p>
         </div>
-        <tab-group></tab-group>
+        <app-tabs></app-tabs>
     </ng-container>
 </app-layout>
   
