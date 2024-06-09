@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { InitialpageComponent } from './pages/initialpage/initialpage.component';
 import { BanktransferComponent } from './pages/banktransfer/banktransfer.component';
+import { RegulationsComponent } from './pages/regulations/regulations.component';
 
 
 export const routes: Routes = [
@@ -11,5 +12,7 @@ export const routes: Routes = [
     { path: 'login',component: LoginComponent },
     { path: '',component: HomeComponent },
     { path:'login/user',component: InitialpageComponent },
-    {path:'user/transfer',component:BanktransferComponent}
+    {path:'user/transfer',component:BanktransferComponent},
+    { path: 'regulations',component: RegulationsComponent },
+    { path: '',component: HomeComponent }
 ]
