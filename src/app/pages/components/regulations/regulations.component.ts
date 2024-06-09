@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { LayoutComponent } from '../../components/layout/layout.component';
+import { LayoutComponent } from '../../../components/layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { Grid3Component } from '../../components/grid-3/grid-3.component';
+import { Grid3Component } from '../../../components/grid-3/grid-3.component';
 
 @Component({
   selector: 'app-regulations',

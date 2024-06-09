@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AuthService } from './auth/auth.service';
+import { API_URL } from './config/tokens';
 
 
 
@@ -13,7 +14,10 @@ import { AuthService } from './auth/auth.service';
   imports: [RouterOutlet, RouterModule,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  providers:[AuthService]
+  providers:[AuthService,{
+    provide: API_URL,
+    useValue:'https://dummyjson.com'
+  }]
 })
 
 

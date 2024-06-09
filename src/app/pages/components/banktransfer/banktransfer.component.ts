@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { LayoutComponent } from '../../components/layout/layout.component';
+import { LayoutComponent } from '../../../components/layout/layout.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { BanktransferService } from '../../services/banktransfer.service';
+import { BanktransferService } from '../../../data/services/banktransfer.service';
 import { Recipient, Security, Sender, TransactionDetails, Transfer } from '../../models/transfer.model';
+
 
 @Component({
   selector: 'app-banktransfer',

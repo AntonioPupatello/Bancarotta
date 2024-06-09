@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { User } from '../models/user.model';
+
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +8,10 @@ import { User } from '../models/user.model';
 export class AuthService {
 LoginUrl = ''
 SignUpUrl = ''
-  user: any = User;
+ 
   constructor(private http:HttpClient) { }
 
-  createUser(email: string, id: string, token: string){
-   this.user = new User(email, id, token)
-  }
+
 
   Login(email: string, password: string){
     return this.http.post(this.LoginUrl,{email: email, password: password, returnSecureToken: true})
@@ -23,7 +21,7 @@ SignUpUrl = ''
   }
 
   Logout(){
-    this.user = null
+   
     localStorage.removeItem('user')
   }
 }

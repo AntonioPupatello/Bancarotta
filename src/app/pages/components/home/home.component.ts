@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { LayoutComponent } from '../../components/layout/layout.component';
-import { TabComponent } from '../../components/tabs/tabs.component';
+import { LayoutComponent } from '../../../components/layout/layout.component';
+import { TabComponent } from '../../../components/tabs/tabs.component';
 
 @Component({
   selector: 'app-home',

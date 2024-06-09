@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { LayoutComponent } from '../../components/layout/layout.component';
+import { LayoutComponent } from '../../../components/layout/layout.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FormBuilder, FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';

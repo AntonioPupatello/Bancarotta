@@ -4,8 +4,8 @@ import { RouterModule } from '@angular/router';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
-import { LayoutComponent } from '../../components/layout/layout.component';
-import { AuthService } from '../../auth/auth.service';
+import { LayoutComponent } from '../../../components/layout/layout.component';
+import { AuthService } from '../../../auth/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -22,8 +22,7 @@ const email = form.value.email
 const password = form.value.password
 this.authService.Login(email,password).subscribe(data =>{
   console.log(data)
-  console.log(this.authService.user)
-  localStorage.setItem('user', JSON.stringify(this.authService.user))
+  
 })
 }
 
