@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, RouterLink, RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterLink} from '@angular/router';
 import { Observable } from 'rxjs';
 import { UsersService } from '../../../data/services/users.service';
 import { User } from '../../models/user';
