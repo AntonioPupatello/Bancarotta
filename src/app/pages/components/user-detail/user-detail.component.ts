@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Observable, Subject} from 'rxjs';
-import { ActivatedRoute, RouterLink} from '@angular/router';
+import { ActivatedRoute,RouterLink } from '@angular/router';
 import { Observable } from 'rxjs';
 import { UsersService } from '../../../data/services/users.service';
 import { User } from '../../models/user';
@@ -9,11 +7,13 @@ import { LayoutComponent } from '../../../components/layout/layout.component';
 import { CommonModule } from '@angular/common';
 import { parse } from 'date-fns';
 import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
+import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from '../../../components/footer/footer.component';
 
 @Component({
   selector: 'app-user-detail',
   standalone: true,
-  imports: [LayoutComponent,CommonModule],
+  imports: [LayoutComponent,CommonModule,RouterLink,MatButtonModule,FooterComponent],
   templateUrl: './user-detail.component.html',
   styleUrl: './user-detail.component.scss'
 })
