@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, Subject} from 'rxjs';
 import { UsersService } from '../../../data/services/users.service';
 import { User } from '../../models/user';
 import { LayoutComponent } from '../../../components/layout/layout.component';
 import { CommonModule } from '@angular/common';
 import { parse } from 'date-fns';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-user-detail',
@@ -20,6 +21,8 @@ export class UserDetailComponent {
   daysUntilExpiration: number = 0; // Assegnazione predefinita per i giorni mancanti al rinnovo della carta
   age: number = 0; // Assegnazione predefinita per l'età dell'utente
 
+  
+
   constructor(private activatedRoute: ActivatedRoute, private usersService: UsersService) {
     this.id = this.activatedRoute.snapshot.params['id'];
     this.user = this.usersService.getUser(this.id);
@@ -32,7 +35,7 @@ export class UserDetailComponent {
   }
 
   calculateDaysUntilExpiration(): void {
-    this.user.subscribe(userData => {
+    this.user.pipe(takeUntilDestroyed()).subscribe(userData => {
       const cardExpire = parse(userData.bank.cardExpire, 'MM/yy', new Date());
       const today = new Date();
       const daysUntilExpiration = Math.ceil((cardExpire.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
@@ -41,7 +44,7 @@ export class UserDetailComponent {
   }
 
   calculateAge(): void {
-    this.user.subscribe(userData => {
+    this.user.pipe(takeUntilDestroyed()).subscribe(userData => {
       const birthDate = new Date(userData.birthDate);
       const today = new Date();
       const age = today.getFullYear() - birthDate.getFullYear();
