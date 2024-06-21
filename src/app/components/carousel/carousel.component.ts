@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class CarouselComponent {
   currentSlide = 0;
   slides = [
-    { image: '../../../assets/images/image1.webp', description: 'Inizia a risparmiare con noi' },
-    { image: '../../../assets/images/image2.webp', description: 'Investi il tuo denaro' },
-    { image: '../../../assets/images/image6.webp', description: 'Paga con la tua carta personalizzata' },
-    { image: '../../../assets/images/image7.webp', description: 'Siamo presenti in tutta Europa' },
-    { image: '../../../assets/images/image8.webp', description: 'Valute nazionali e internazionali' },
+    { image: '../../../assets/images/image1.webp', description: 'Inizia a risparmiare con noi', link: '' },
+    { image: '../../../assets/images/image2.webp', description: 'Investi il tuo denaro', link: '' },
+    { image: '../../../assets/images/image6.webp', description: 'Paga con la tua carta personalizzata', link: '' },
+    { image: '../../../assets/images/image7.webp', description: 'Siamo presenti in tutta Europa', link: '' },
+    { image: '../../../assets/images/image8.webp', description: 'Valute nazionali e internazionali', link: '/exchange' },
   ];
 
   showSlide(index: number) {

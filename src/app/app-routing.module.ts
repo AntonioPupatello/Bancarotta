@@ -6,14 +6,16 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegulationsComponent } from './pages/regulations/regulations.component';
 import { UsersComponent } from './pages/users/users.component';
 import { UserDetailComponent } from './pages/user-detail/user-detail.component';
+import { ExchangeComponent } from './pages/exchange/exchange.component';
 
-const routes: Routes = [
-  { path: '',component: HomeComponent },
-  { path: 'signin',component: SigninComponent },
-  { path: 'login',component: LoginComponent },
-  { path: 'regulations',component: RegulationsComponent },
-  { path: 'users',component: UsersComponent },
-  { path: 'users/:id',component: UserDetailComponent },
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'regulations', component: RegulationsComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'exchange', component: ExchangeComponent },
+  { path: 'users/:id', component: UserDetailComponent },
 ];
 
 @NgModule({

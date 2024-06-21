@@ -8,6 +8,8 @@
     <article class="user">
       @if( user | async; as user){
         <br>
+        <br>
+        <br>
         <div class="flexUp">
           <img [src]="user.image">
           <div class="flexCol">
@@ -16,7 +18,7 @@
             <h2>Caratteristiche:</h2>
             <p>
               Sesso: {{user.gender}}<br>
-              Data di nascita: {{user.birthDate}}<br>
+              Data di nascita: {{user.birthDate | date:'longDate'}}<br>
               Età: {{age}} <br>
               Altezza: {{user.height}}<br>
               Peso: {{user.weight}}<br>
@@ -35,7 +37,9 @@
             </p>
           </div>
         </div>
-        <p>
+        <br>
+        <br>
+        <p class="dettagli">
           Il presente cliente {{user.firstName+' '+user.lastName}} possiede la seguente carta di credito presso la nostra banca<br>
           <br>
           Tipo: {{user.bank.cardType}}<br>
@@ -45,6 +49,7 @@
           <br>
           Alla data odierna la presente carta risulta con scadenza: {{user.bank.cardExpire}} con quindi {{daysUntilExpiration}} giorni mancanti al rinnovo di quest'ultima.
         </p>
+        <br>
       }
     </article>
   </ng-container>

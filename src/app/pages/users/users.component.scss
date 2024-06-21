@@ -16,4 +16,9 @@ div {
     h1 {
         font-size: x-large;
     }
+
+    img {
+        border: 2px solid black; /* larghezza, tipo e colore della cornice */
+        border-radius: 20px; /* angoli arrotondati */
+    }
 }

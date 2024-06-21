@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { NgModule, ModuleWithProviders  } from '@angular/core';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactComponent } from './contact/contact.component';
@@ -16,6 +16,10 @@ import { StoryComponent } from './story/story.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TabsComponent } from './tabs/tabs.component';
 import { RouterModule } from '@angular/router';
+import { CurrencyConvertComponent } from './currency-convert/currency-convert.component';
+import { TableComponent } from './table/table.component';
+import { SelectComponent } from './select/select.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,9 @@ import { RouterModule } from '@angular/router';
     StepperComponent,
     StoryComponent,
     TabsComponent,
+    CurrencyConvertComponent,
+    TableComponent,
+    SelectComponent,
   ],
   imports: [
     CommonModule,
@@ -40,6 +47,8 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     MatTabsModule,
     RouterModule,
+    CurrencyPipe,
+    MatProgressSpinnerModule,
   ],
   exports: [
     CarouselComponent,
@@ -59,6 +68,9 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    CurrencyConvertComponent,
+    TableComponent,
+    SelectComponent,
   ]
 })
 export class ComponentsModule { 

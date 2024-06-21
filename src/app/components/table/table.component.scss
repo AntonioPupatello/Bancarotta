@@ -1,0 +1,20 @@
+table{
+    width: 100%;
+
+    td{
+        border: 1px solid #000;
+    }
+}
+
+.mat-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Altezza piena per la cella, se necessario */
+}
+  
+.normal-font {
+    font-weight: normal; /* Rimuove il grassetto */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}

@@ -1,0 +1,35 @@
+<table>
+    <thead>
+        <tr>
+            <th class="normal-font">Bandiera</th>
+            <th class="normal-font">ID</th>
+            <th class="normal-font">Valore</th>
+            <th class="normal-font">Simbolo</th>
+        </tr>
+    </thead>
+    <tbody>
+    @for(item of data; track $index){
+        <tr>
+            @for(column of columns; track $index){
+                @if(currencyCols.includes(column)){
+                    <td>{{ currencyVal * item[column] | currency:'':'' }}</td>
+                }@else {
+                    <td>{{ item[column] }}</td>
+                }
+            }
+        </tr>
+    } @empty {
+        <br>
+        <tr>
+            <td colspan="4">Dati in caricamento..</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="mat-spinner-container">
+                    <mat-spinner></mat-spinner>
+                </div>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

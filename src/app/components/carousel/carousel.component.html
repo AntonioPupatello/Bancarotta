@@ -3,7 +3,9 @@
 <div class="carousel">
   <div class="carousel-inner">
     <div class="carousel-item" *ngFor="let slide of slides; let i = index" [hidden]="i !== currentSlide">
-      <img [src]="slide.image" alt="Image {{i + 1}}">
+      <a [routerLink]="slide.link">
+        <img [src]="slide.image" alt="Image {{i + 1}}">
+      </a>
       <div class="carousel-caption">
         <p>{{ slide.description }}</p>
       </div>

@@ -8,6 +8,7 @@ import { SigninComponent } from './signin/signin.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UsersComponent } from './users/users.component';
 import { RouterModule } from '@angular/router';
+import { ExchangeComponent } from './exchange/exchange.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     SigninComponent,
     UserDetailComponent,
     UsersComponent,
+    ExchangeComponent,
   ],
   imports: [
     CommonModule,
@@ -24,12 +26,15 @@ import { RouterModule } from '@angular/router';
     RouterModule,
   ],
   exports:[
+    /*
     HomeComponent,
     LoginComponent,
     RegulationsComponent,
     SigninComponent,
     UserDetailComponent,
     UsersComponent,
+    ExchangeComponent,
+    */
   ]
 })
 export class PagesModule { }
