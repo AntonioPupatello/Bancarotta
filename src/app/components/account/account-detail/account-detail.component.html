@@ -1,0 +1,6 @@
+@if(account$ | async; as account){
+    <h1>Edit Account</h1>
+    <button routerLink="/">Back</button>
+    <button (click)="deleteAccount(account)">Delete</button>
+    <app-account-form [formConfig]="formConfig" [startingValues]="account" (onSubmit)="updateAccount($event)"/>
+}

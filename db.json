@@ -1,0 +1,26 @@
+{
+  "account": [
+    {
+      "firstName": "mino",
+      "lastName": "test",
+      "username": "username",
+      "password": "password",
+      "city": "Firenze",
+      "email": "pierdomenico.reitano@farport.co",
+      "phone": "+39 3200410975",
+      "notes": "ciao come stai?",
+      "id": 2
+    },
+    {
+      "firstName": "gandalf",
+      "lastName": "il grigio",
+      "username":"username1",
+      "password":"password1",
+      "city": "Valinor",
+      "email": "gandalf@ilgrigio.com",
+      "phone": "+39 3200410975",
+      "notes": "uno stregone non è mai in ritardo",
+      "id": 3
+    }
+  ]
+}

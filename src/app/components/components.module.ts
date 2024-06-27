@@ -20,6 +20,13 @@ import { CurrencyConvertComponent } from './currency-convert/currency-convert.co
 import { TableComponent } from './table/table.component';
 import { SelectComponent } from './select/select.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { AccountDetailComponent } from './account/account-detail/account-detail.component';
+import { AccountErrorComponent } from './account/error/error.component';
+import { AccountTableComponent } from './account/table/table.component';
+import { AccountFormComponent } from './account/form/form.component';
+import { AccountListComponent } from './account/account-list/account-list.component';
+import { AccountNewComponent } from './account/account-new/account-new.component';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +40,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     CurrencyConvertComponent,
     TableComponent,
     SelectComponent,
+    AccountDetailComponent,
+    AccountErrorComponent,
+    AccountFormComponent,
+    AccountTableComponent,
+    AccountListComponent,
+    AccountNewComponent,
   ],
   imports: [
     CommonModule,
@@ -49,6 +62,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     RouterModule,
     CurrencyPipe,
     MatProgressSpinnerModule,
+    ReactiveFormsModule,
   ],
   exports: [
     CarouselComponent,
@@ -71,6 +85,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     CurrencyConvertComponent,
     TableComponent,
     SelectComponent,
+    AccountDetailComponent,
+    AccountErrorComponent,
+    AccountFormComponent,
+    AccountTableComponent,
+    AccountListComponent,
+    AccountNewComponent,
   ]
 })
 export class ComponentsModule { 

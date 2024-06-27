@@ -1,0 +1,3 @@
+<button routerLink="/account/new">Create account</button>
+<app-account-table [data]="accounts$ | async" [columns]="tableConfig" (onAction)="goToDetail($event)"/>
+

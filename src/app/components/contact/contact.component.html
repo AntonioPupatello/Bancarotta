@@ -3,23 +3,27 @@
     <img src="../../../assets/images/image3.webp" alt="Immagine">
   </div>
   <div class="grid-item">
-    <div class="form-container">
-      <mat-form-field appearance="fill" class="form">
-        <mat-label>Nome</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="form">
-        <mat-label>Cognome</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="form">
-        <mat-label>Email</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="form">
-        <mat-label>Scrivi il tuo messaggio qui...</mat-label>
-        <textarea matInput></textarea>
-      </mat-form-field>
+    <div class="form-container" >
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill" class="form">
+          <mat-label>Nome</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form">
+          <mat-label>Cognome</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form">
+          <mat-label>Email</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form">
+          <mat-label>Scrivi il tuo messaggio qui...</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <br>
+        <button type="submit">Invia</button>
+      </form>
     </div>
   </div>
   <div class="grid-item">

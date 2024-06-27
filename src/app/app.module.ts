@@ -7,8 +7,9 @@ import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet, provideRouter } from '@angular/router';
-import { API_URL, CURRENCY_URL } from './config/tokens';
-import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { ACCOUNT_URL, API_URL, CURRENCY_URL } from './config/tokens';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,12 @@ import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@an
     CommonModule,
     RouterOutlet,  
     RouterModule,
+    ReactiveFormsModule,
     // HttpClientModule,
   ],
   providers: [
     provideRouter(routes),
-    provideHttpClient(withInterceptorsFromDi()),
+    provideHttpClient(withFetch()),
     {
       provide: API_URL,
       useValue: 'https://dummyjson.com'
@@ -35,7 +37,11 @@ import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@an
     {
       provide: CURRENCY_URL,
       useValue: 'https://open.er-api.com/v6/latest'
-    }
+    },
+    {
+      provide: ACCOUNT_URL,
+      useValue: '/api'
+    },
   ],
   bootstrap: [AppComponent]
 })

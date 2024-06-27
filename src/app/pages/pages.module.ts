@@ -9,6 +9,9 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UsersComponent } from './users/users.component';
 import { RouterModule } from '@angular/router';
 import { ExchangeComponent } from './exchange/exchange.component';
+import { PageAccountDetailComponent } from './page-account-detail/page-account-detail.component';
+import { PageAccountNewComponent } from './page-account-new/page-account-new.component';
+import { PageAccountComponent } from './page-account/page-account.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { ExchangeComponent } from './exchange/exchange.component';
     UserDetailComponent,
     UsersComponent,
     ExchangeComponent,
+    PageAccountDetailComponent,
+    PageAccountNewComponent,
+    PageAccountComponent,
   ],
   imports: [
     CommonModule,

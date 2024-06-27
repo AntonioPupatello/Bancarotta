@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable, inject } from "@angular/core";
-import { API_URL } from "../config/tokens";
+import { ACCOUNT_URL, API_URL } from "../config/tokens";
 import { Observable, catchError } from "rxjs";
 import { ApiCallParams } from "../models/api";
 
@@ -10,6 +10,12 @@ export class EssentialService {
     // dependencies
     private http = inject(HttpClient)
     protected apiBase = inject(API_URL)
+    protected altApiBase = inject(ACCOUNT_URL)
+
+    protected altApiPath = ''
+    get altApiUrl():string{
+        return `${this.altApiBase}/${this.altApiPath}`
+    }
 
     // variabili configurabili
     protected apiPath = ''
@@ -18,10 +24,11 @@ export class EssentialService {
     }
 
     // metodo che permette di chiamare gli endpoint api
-    protected apiCall<T>(options: ApiCallParams):Observable<T>{
+    protected apiCall<T>(params: ApiCallParams):Observable<T>{
         return this.http.request<T>(
-            options.type,
-            options.url
+            params.type,
+            params.url,
+            params.options
         ).pipe(
             catchError(err => {
                 alert(err)
