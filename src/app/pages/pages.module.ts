@@ -12,6 +12,7 @@ import { ExchangeComponent } from './exchange/exchange.component';
 import { PageAccountDetailComponent } from './page-account-detail/page-account-detail.component';
 import { PageAccountNewComponent } from './page-account-new/page-account-new.component';
 import { PageAccountComponent } from './page-account/page-account.component';
+import { NewComponent } from './new/new.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PageAccountComponent } from './page-account/page-account.component';
     PageAccountDetailComponent,
     PageAccountNewComponent,
     PageAccountComponent,
+    NewComponent,
   ],
   imports: [
     CommonModule,

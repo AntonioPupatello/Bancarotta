@@ -9,6 +9,8 @@ import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 import { ExchangeComponent } from './pages/exchange/exchange.component';
 import { PageAccountComponent } from './pages/page-account/page-account.component';
 import { PageAccountDetailComponent } from './pages/page-account-detail/page-account-detail.component';
+import { PageAccountNewComponent } from './pages/page-account-new/page-account-new.component';
+import { NewComponent } from './pages/new/new.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +22,8 @@ export const routes: Routes = [
   { path: 'exchange', component: ExchangeComponent },
   { path: 'account', component: PageAccountComponent },
   { path: 'account/:id', component: PageAccountDetailComponent },
-  { path: 'account/new', component: PageAccountComponent },
+  { path: 'account/new', component: NewComponent },
+  { path: '**', redirectTo:'' }
 ];
 
 @NgModule({

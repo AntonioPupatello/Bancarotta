@@ -11,14 +11,14 @@ export class EssentialService {
     private http = inject(HttpClient)
     protected apiBase = inject(API_URL)
     protected altApiBase = inject(ACCOUNT_URL)
+    protected apiPath = ''
 
-    protected altApiPath = ''
     get altApiUrl():string{
-        return `${this.altApiBase}/${this.altApiPath}`
+        return `${this.altApiBase}/${this.apiPath}`
     }
 
     // variabili configurabili
-    protected apiPath = ''
+
     get apiUrl():string{
         return `${this.apiBase}/${this.apiPath}`
     }

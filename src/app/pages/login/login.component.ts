@@ -8,6 +8,6 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent {
   onSubmit(form: NgForm) {
-    const email = form.value.email
+    const username = form.value.username
     const password = form.value.password}
 }

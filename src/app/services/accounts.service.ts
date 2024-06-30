@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 export class AccountsService extends EssentialService {
   constructor() {
     super();
-    this.altApiPath = 'account';
+    this.apiPath = 'account';
   }
 
   getAccounts(): Observable<Account[]> {
@@ -18,7 +18,7 @@ export class AccountsService extends EssentialService {
       url: this.altApiUrl,
     });
   }
-
+  
   getAccount(id: number): Observable<Account> {
     return this.apiCall<Account>({
       type: 'GET',
